@@ -1,0 +1,19 @@
+.content-box-top {
+  background: linear-gradient( 270deg, rgba(0,25,71,0) 0%, rgba(56,119,242,0.4) 100%);
+border-left: 3px solid #2F65CE;
+}
+.content-box-top-title { 
+font-weight: 500;
+font-size: 18px;
+color: #FFFFFF;
+line-height: 25px;
+text-shadow: 0px 0px 8px #088BFF;
+text-align: left;
+font-style: normal;
+}
+.content-box-top-select {
+background: linear-gradient( 180deg, rgba(56,119,242,0) 0%, rgba(56,119,242,0.5) 100%);
+box-shadow: inset 0px -4px 6px 0px rgba(56,119,242,0.2);
+border: 1px solid;
+border-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.46)) 1 1;
+}

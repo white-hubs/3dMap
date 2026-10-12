@@ -1,0 +1,48 @@
+/* 弹窗滑入动画 */
+@keyframes popup-slide-in {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 50%) scale(0.8); /* 从图标中心开始缩放 */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(40px, -25%) scale(1); /* 最终滑到右侧 40px 处 */
+  }
+}
+
+/* 内部列表项交替入场（可选，增加精致感） */
+@keyframes item-in {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-popup {
+  animation: popup-slide-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-item {
+  opacity: 0;
+  animation: item-in 0.4s ease-out forwards;
+}
+
+@keyframes border-glow {
+  0%,
+  100% {
+    border-color: rgba(42, 114, 255, 1);
+    box-shadow: 0 0 10px rgba(42, 114, 255, 0.4);
+  }
+  50% {
+    border-color: rgba(130, 180, 255, 1); /* 闪烁时颜色变亮 */
+    box-shadow: 0 0 25px rgba(42, 114, 255, 0.8); /* 阴影扩大 */
+  }
+}
+
+.animate-glow-border {
+  animation: border-glow 2s infinite ease-in-out;
+}

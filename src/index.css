@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+/* 弹窗表格样式 */
+.modal-table .ant-table {
+  background: none !important;
+  --ant-table-cell-font-size: 18px;
+}
+.modal-table .ant-table .ant-table-cell::before {
+  display: none;
+}
+
+.modal-table .ant-table-summary {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 139, 255, 0.16) 0%,
+    rgba(8, 139, 255, 0.41) 52.68%,
+    rgba(8, 139, 255, 0.16) 100%
+  );
+}
+
+.modal-table .ant-table-expanded-row-fixed {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 139, 255, 0.16) 0%,
+    rgba(8, 139, 255, 0.41) 52.68%,
+    rgba(8, 139, 255, 0.16) 100%
+  ) !important;
+}
+
+.ant-table-pagination {
+  padding: 0 20px !important;
+  --ant-pagination-item-active-bg: #2352a9;
+}
+
+.ant-table-pagination .ant-pagination-item {
+  --ant-pagination-item-active-bg: #2352a9;
+  --ant-pagination-item-bg: #1e2937;
+  --ant-pagination-item-active-color: #ffff;
+}
